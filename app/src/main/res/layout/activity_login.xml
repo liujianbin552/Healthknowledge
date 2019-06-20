@@ -29,7 +29,6 @@
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:layout_gravity="center_horizontal"
-
             android:drawablePadding="10dp"
             android:paddingLeft="8dp"
             android:gravity="center_vertical"
@@ -85,7 +84,7 @@
                 android:gravity="center_horizontal"
                 android:padding="8dp"
                 android:text="立即注册"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="14sp" />
             <TextView
                 android:id="@+id/tv_find_psw"
@@ -95,7 +94,7 @@
                 android:gravity="center_horizontal"
                 android:padding="8dp"
                 android:text="找回密码?"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="14sp" />
         </LinearLayout>
     </LinearLayout>

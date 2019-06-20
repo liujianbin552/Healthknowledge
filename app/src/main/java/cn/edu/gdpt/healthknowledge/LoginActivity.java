@@ -23,15 +23,12 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        init();
+        initView();
     }
     //获取界面控件
-    private void init() {
+    private void initView() {
         //从main_title_bar中获取的id
-        tv_main_title=findViewById(R.id.tv_main_title);
-        tv_main_title.setText("登录");
         tv_back=findViewById(R.id.tv_back);
         //从activity_login.xml中获取的
         tv_register=findViewById(R.id.tv_register);
@@ -40,13 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         et_user_name=findViewById(R.id.et_user_name);
         et_psw=findViewById(R.id.et_psw);
         //返回键的点击事件
-        tv_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //登录界面销毁
-                LoginActivity.this.finish();
-            }
-        });
+
         //立即注册控件的点击事件
         tv_register.setOnClickListener(new View.OnClickListener() {
             @Override
