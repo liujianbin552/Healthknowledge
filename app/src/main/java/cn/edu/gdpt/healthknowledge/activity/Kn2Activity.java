@@ -144,7 +144,7 @@ public class Kn2Activity extends AppCompatActivity {
         Line line = lineData.getLines().get(0);
         for (int i = 0; i < line.getValues().size(); i++) {
             PointValue value = line.getValues().get(i);
-            switch (i) {  //设置折线图上的每个点的值
+            switch (i) {
                 case 0:
                     value.setTarget(value.getX(), (float) 20);
                     break;

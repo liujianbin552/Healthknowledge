@@ -71,7 +71,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:background="#aacccccc" />
-
             <Button
                 android:id="@+id/btn_shezhi"
                 android:layout_width="fill_parent"

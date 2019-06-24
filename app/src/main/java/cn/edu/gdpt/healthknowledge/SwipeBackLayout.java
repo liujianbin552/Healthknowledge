@@ -178,7 +178,6 @@ public class SwipeBackLayout extends FrameLayout {
     }
     @Override
     public void computeScroll() {
-        //调用startScroll()方法时，scroller.computeScrollOffset()返回为true，
         if (mScroller.computeScrollOffset()) {
             mContentView.scrollTo(mScroller.getCurrX(), mScroller.getCurrY());
             postInvalidate();

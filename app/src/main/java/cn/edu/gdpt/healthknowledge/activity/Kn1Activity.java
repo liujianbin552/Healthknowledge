@@ -57,7 +57,7 @@ public class Kn1Activity extends AppCompatActivity {
         chart.startDataAnimation();
     }
     private void generateData() {
-        int numValues = 4; //设置饼状图扇形的数量
+        int numValues = 4;
         List<SliceValue> values = new ArrayList<SliceValue>();
         for (int i = 0; i < numValues; ++i) {
             switch (i+1) {
