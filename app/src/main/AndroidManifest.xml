@@ -9,16 +9,19 @@
         android:roundIcon="@mipmap/hospital"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.PhotoActivity"></activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity"/>
-            <activity android:name=".SplashActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.Kn1Activity" />
+        <activity android:name=".activity.Kn2Activity" />
     </application>
 
 </manifest>

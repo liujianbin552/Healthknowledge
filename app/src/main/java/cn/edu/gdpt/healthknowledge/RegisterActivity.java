@@ -3,7 +3,6 @@ package cn.edu.gdpt.healthknowledge;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,6 +12,8 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import cn.edu.gdpt.healthknowledge.utils.MD5Utils;
 
 public class RegisterActivity extends AppCompatActivity {
     private TextView tv_main_title;
