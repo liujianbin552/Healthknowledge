@@ -51,7 +51,5 @@ public class MeFragment extends Fragment {
             }
         });
        return view;
-
-
     }
 }

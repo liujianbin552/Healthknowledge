@@ -56,11 +56,11 @@ public class KnowledgeFragment extends Fragment {
                     @Override
                     public void onBoomButtonClick(int index) {
                         switch (index) {
-                            case 0:   //跳转到Android统计详情界面
+                            case 0:
                                 Intent android = new Intent(getActivity(), Kn1Activity.class);
                                 startActivity(android);
                                 break;
-                            case 1:   //跳转到Java统计详情界面
+                            case 1:
                                 Intent java = new Intent(getActivity(), Kn2Activity.class);
                                 startActivity(java);
                                 break;
