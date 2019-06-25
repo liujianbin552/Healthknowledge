@@ -61,25 +61,25 @@ public class Kn1Activity extends AppCompatActivity {
         List<SliceValue> values = new ArrayList<SliceValue>();
         for (int i = 0; i < numValues; ++i) {
             switch (i+1) {
-                case 1: //饼状图中的第一个扇形
+                case 1:
                     SliceValue sliceValue1 = new SliceValue(i + 1, ChartUtils.COLOR_GREEN);
                     sliceValue1.setTarget(4);            //扇形的大小
                     sliceValue1.setLabel("小学生");  //扇形中的文本
                     values.add(sliceValue1);
                     break;
-                case 2: //饼状图中的第二个扇形
+                case 2:
                     SliceValue sliceValue2 = new SliceValue(i + 1,ChartUtils.COLOR_VIOLET);
                     sliceValue2.setTarget(3);
                     sliceValue2.setLabel("初中生");
                     values.add(sliceValue2);
                     break;
-                case 3: //饼状图中的第三个扇形
+                case 3:
                     SliceValue sliceValue3 = new SliceValue(i + 1,ChartUtils.COLOR_BLUE);
                     sliceValue3.setTarget(2);
                     sliceValue3.setLabel("高中生");
                     values.add(sliceValue3);
                     break;
-                case 4: //饼状图中的第四个扇形
+                case 4:
                     SliceValue sliceValue4 = new SliceValue(i + 1,ChartUtils.COLOR_ORANGE);
                     sliceValue4.setTarget(1);
                     sliceValue4.setLabel("大学生");

@@ -30,6 +30,5 @@ public class SplashActivity extends AppCompatActivity {
             }
         };
         timer.schedule(task,3000);
-
     }
 }

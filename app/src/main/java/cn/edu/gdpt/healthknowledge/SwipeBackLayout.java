@@ -60,7 +60,6 @@ public class SwipeBackLayout extends FrameLayout {
      */
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        //处理ViewPager冲突问题
         ViewPager mViewPager = getTouchViewPager(mViewPagers, ev);
         if (mViewPager != null && mViewPager.getCurrentItem() != 0) {
             return super.onInterceptTouchEvent(ev);
@@ -162,7 +161,6 @@ public class SwipeBackLayout extends FrameLayout {
      */
     private void scrollRight() {
         final int delta = (viewWidth + mContentView.getScrollX());
-        //调用startScroll方法来设置一些滚动的参数
         mScroller.startScroll(mContentView.getScrollX(), 0, -delta + 1, 0,
                 Math.abs(delta));
         postInvalidate();

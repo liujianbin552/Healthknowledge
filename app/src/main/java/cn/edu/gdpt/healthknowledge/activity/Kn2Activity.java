@@ -79,7 +79,7 @@ public class Kn2Activity extends AppCompatActivity {
         }
         for (int i = 0; i < numColumns; ++i) {
             values = new ArrayList<SubcolumnValue>();
-            switch (i) { //设置柱状图中的每个条形图的值与颜色
+            switch (i) {
                 case 0:
                     values.add(new SubcolumnValue((float) 20, ChartUtils.COLOR_GREEN));
                     break;
@@ -113,7 +113,6 @@ public class Kn2Activity extends AppCompatActivity {
         columnData.setAxisYLeft(new Axis(axisYValues).setHasLines(true).
                 setMaxLabelChars(6));
         chartBottom.setColumnChartData(columnData);
-        //这个设置会保证柱状图在点击年数的条目时条目会亮起来
         chartBottom.setValueSelectionEnabled(true);
         chartBottom.setZoomType(ZoomType.HORIZONTAL);
     }

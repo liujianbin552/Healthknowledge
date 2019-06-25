@@ -7,4 +7,5 @@
     android:background="@drawable/jiankang"
     tools:context=".activity.SplashActivity">
 
+
 </android.support.constraint.ConstraintLayout>
