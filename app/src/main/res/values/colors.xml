@@ -20,4 +20,5 @@
     <color name="money_text_color">#f0c062</color>
     <color name="health_text_color">#9cd47a</color>
     <color name="choose_constellation_title_color">#8bdcea</color>
+    <color name="font_color">#5a5857</color>
 </resources>
