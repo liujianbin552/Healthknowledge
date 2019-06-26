@@ -3,7 +3,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.FirstFragment">
+    android:background="@drawable/chaxun">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/information"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="健康知识查询"
+                android:layout_gravity="center"
+                android:textSize="28dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/chaxun"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="#8bdcea"
+                android:layout_gravity="center"
+                android:text="查询"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
 
 
 
