@@ -27,8 +27,6 @@ import cn.edu.gdpt.healthknowledge.utils.BuilderManager;
  * A simple {@link Fragment} subclass.
  */
 public class KnowledgeFragment extends Fragment {
-
-
     private BoomMenuButton bmb;
     private WebView webView;
     private Context context;

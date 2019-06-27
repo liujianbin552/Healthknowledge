@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".activity.PhotoActivity"></activity>
+        <activity android:name=".activity.YangshengActivity"></activity>
+        <activity android:name=".activity.ShowActivity" />
+        <activity android:name=".activity.JiankangActivity" />
+        <activity android:name=".activity.GuanyuActivity" />
+        <activity android:name=".activity.PhotoActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity" />
@@ -23,5 +27,4 @@
         <activity android:name=".activity.Kn1Activity" />
         <activity android:name=".activity.Kn2Activity" />
     </application>
-
 </manifest>
