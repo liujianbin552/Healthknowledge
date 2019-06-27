@@ -24,7 +24,7 @@
                 android:id="@+id/rb_count"
                 style="@style/style_RadioButton"
                 android:drawableTop="@drawable/rb_count_selector"
-                android:text="统计"
+                android:text="资讯"
                 android:textColor="@drawable/rb_text_selector" />
             <RadioButton
                 android:id="@+id/rb_me"
