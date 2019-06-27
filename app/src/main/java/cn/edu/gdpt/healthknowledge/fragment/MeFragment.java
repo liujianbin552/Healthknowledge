@@ -10,11 +10,13 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import cn.edu.gdpt.healthknowledge.LoginActivity;
 import cn.edu.gdpt.healthknowledge.R;
 import cn.edu.gdpt.healthknowledge.activity.GuanyuActivity;
 import cn.edu.gdpt.healthknowledge.activity.PhotoActivity;
+import cn.edu.gdpt.healthknowledge.activity.ShowActivity;
 import cn.edu.gdpt.healthknowledge.activity.YangshengActivity;
 
 /**
@@ -27,6 +29,7 @@ public class MeFragment extends Fragment {
     private Button btn_guanyu;
     private Button btn_yangsheng;
     private WebView webView;
+    private ImageView sc;
     public MeFragment() {
         // Required empty public constructor
     }
@@ -72,6 +75,15 @@ public class MeFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), YangshengActivity.class);
                 intent.putExtra("URL", "https://jingyan.baidu.com/article/c35dbcb0b1e3848916fcbc19.html");
+                startActivity(intent);
+            }
+        });
+        sc=(ImageView)view.findViewById(R.id.sc);
+        sc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), ShowActivity.class);
+                intent.putExtra("URL", "http://www.360doc.com/content/18/0328/09/13964870_740797999.shtml");
                 startActivity(intent);
             }
         });
