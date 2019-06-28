@@ -3,6 +3,7 @@ package cn.edu.gdpt.healthknowledge.utils;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,12 +19,15 @@ import cn.edu.gdpt.healthknowledge.bean.FirstBean;
 public class HealthRVadapter extends RecyclerView.Adapter<HealthRVadapter.viewholder> {
     private Context context;
 
-    public HealthRVadapter(Context context, List<FirstBean.ResultBean.ListBean> listBeans) {
+    public HealthRVadapter(Context context, List<FirstBean.NewslistBean> listBeans) {
         this.context = context;
         this.listBeans = listBeans;
     }
 
-    private List<FirstBean.ResultBean.ListBean> listBeans;
+    private List<FirstBean.NewslistBean> listBeans;
+
+    public HealthRVadapter(FragmentActivity activity, List<FirstBean.NewslistBean> listBeans) {
+    }
 
 
     @NonNull
@@ -37,14 +41,15 @@ public class HealthRVadapter extends RecyclerView.Adapter<HealthRVadapter.viewho
     @Override
     public void onBindViewHolder(@NonNull HealthRVadapter.viewholder viewholder, final int i) {
 
-            viewholder.tv_title.setText(listBeans.get(i).getTitle());
-            viewholder.tv_content.setText(listBeans.get(i).getContent());
+            viewholder.tv_content.setText(listBeans.get(i).getCtime());
+            viewholder.tv_content.setText(listBeans.get(i).getTitle());
             viewholder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                    Intent intent=new Intent(context, JiankangActivity.class);
-                   intent.putExtra("bean",listBeans.get(i).getTitle());
-                    intent.putExtra("context",listBeans.get(i).getContent());
+
+                   intent.putExtra("bean",listBeans.get(i).getCtime());
+                    intent.putExtra("context",listBeans.get(i).getTitle());
                     context.startActivity(intent);
                     //Toast.makeText(context, listBeans.get(i).getContent(), Toast.LENGTH_SHORT).show();
                     //Intent intent=new Intent(context, ContextActivity.class);
