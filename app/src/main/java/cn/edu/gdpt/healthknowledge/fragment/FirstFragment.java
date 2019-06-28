@@ -41,7 +41,7 @@ public class FirstFragment extends Fragment {
     private Button btn;
 
     private RecyclerView recyclerView;
-    private List<FirstBean.ResultBean.ListBean> listBeans;
+    private List<FirstBean.NewslistBean> listBeans;
     private Gson gson=new Gson();
     private TextView item_tv_content;
     private Layout itemlist;
@@ -76,11 +76,10 @@ public class FirstFragment extends Fragment {
                             if(!TextUtils.isEmpty(cx.getText().toString().trim())){
                                 final String sync_get = HttpUtils.Sync_Get(cx.getText().toString().trim());
                                 FirstBean bean=gson.fromJson(sync_get, FirstBean.class);
-                                listBeans=bean.getResult().getList();
+                                listBeans=bean.getNewslist();
                                 activity.runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        // Toast.makeText(activity, sync_get, Toast.LENGTH_SHORT).show();
                                         HealthRVadapter healthRVadapter=new HealthRVadapter(getActivity(),listBeans);
                                         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity());
                                         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -123,7 +122,7 @@ public class FirstFragment extends Fragment {
                             if (!TextUtils.isEmpty(cx.getText().toString().trim())){
                                 final String sync_get = HttpUtils.Sync_Get(cx.getText().toString().trim());
                                 FirstBean bean=gson.fromJson(sync_get, FirstBean.class);
-                                listBeans=bean.getResult().getList();
+                                listBeans=bean.getNewslist();
                                 activity.runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
@@ -161,7 +160,7 @@ public class FirstFragment extends Fragment {
     private void initView(View viewGroup) {
         cx = (EditText) viewGroup.findViewById(R.id.cx);
         recyclerView=(RecyclerView) viewGroup.findViewById(R.id.health_recycler_view);
-        //jumpTextView=(TextView)viewGroup.findViewById(R.id.tv_jump);
+        item_tv_content=(TextView)viewGroup.findViewById(R.id.item_tv_content);
     }
 
 
