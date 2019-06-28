@@ -1,11 +1,11 @@
 package cn.edu.gdpt.healthknowledge;
 
 import android.os.Build;
+import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.RadioGroup;
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         radioGroup.check(R.id.rb_count);
-                        tv_main_title.setText("统计");
+                        tv_main_title.setText("资讯");
                         rl_title_bar.setVisibility(View.VISIBLE);
                         break;
                     case 2:
